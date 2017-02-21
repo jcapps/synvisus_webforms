@@ -1,0 +1,83 @@
+﻿<%@ Master Language="VB" CodeFile="Mobile.master.vb" Inherits="Mobile_Mobile" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Synvisus: Mobile</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+    </asp:PlaceHolder>
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <asp:ContentPlaceHolder ID="Stylesheets" runat="server">
+        <link rel="stylesheet" href="~/Content/Mobile.css" type="text/css" />
+    </asp:ContentPlaceHolder>
+    <link href="~/sbafavicon.ico" rel="shortcut icon" type="image/x-icon" />
+</head>
+<body>
+    <form id="form1" runat="server">
+        <asp:ScriptManager runat="server">
+            <Scripts>
+                <%--To learn more about bundling scripts in ScriptManager see http://go.microsoft.com/fwlink/?LinkID=301884 --%>
+                <%--Framework Scripts--%>
+                <asp:ScriptReference Name="MsAjaxBundle" />
+                <asp:ScriptReference Name="jquery" />
+                <asp:ScriptReference Name="bootstrap" />
+                <asp:ScriptReference Name="respond" />
+                <asp:ScriptReference Name="WebForms.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebForms.js" />
+                <asp:ScriptReference Name="WebUIValidation.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebUIValidation.js" />
+                <asp:ScriptReference Name="MenuStandards.js" Assembly="System.Web" Path="~/Scripts/WebForms/MenuStandards.js" />
+                <asp:ScriptReference Name="GridView.js" Assembly="System.Web" Path="~/Scripts/WebForms/GridView.js" />
+                <asp:ScriptReference Name="DetailsView.js" Assembly="System.Web" Path="~/Scripts/WebForms/DetailsView.js" />
+                <asp:ScriptReference Name="TreeView.js" Assembly="System.Web" Path="~/Scripts/WebForms/TreeView.js" />
+                <asp:ScriptReference Name="WebParts.js" Assembly="System.Web" Path="~/Scripts/WebForms/WebParts.js" />
+                <asp:ScriptReference Name="Focus.js" Assembly="System.Web" Path="~/Scripts/WebForms/Focus.js" />
+                <asp:ScriptReference Name="WebFormsBundle" />
+                <%--Site Scripts--%>
+            </Scripts>
+        </asp:ScriptManager>
+
+    <div class="container-mobile">
+        <header id="header-mobile">
+        <div id="logo">
+            <%If Request.Browser.Browser = "InternetExplorer" Then Response.Write("<img src='../Pictures/SynvisusLogoIE.png' alt='Logo' height='45' style='float:left'/>") Else Response.Write("<img src='../Pictures/SynvisusLogo.png' alt='Logo' height='45' style='float:left'/>")%>
+        </div>
+         
+        <nav id="navbar-mobile">
+            <ul id="navbar-list">
+                <li><a runat="server" class="navlink-mobile" href="~/Mobile/Default#About">About Us</a></li>
+                <li><a runat="server" class="navlink-mobile" href="~/Mobile/Default#What">What We Do</a></li>
+                <li><a runat="server" class="navlink-mobile" href="~/Mobile/Default#Demos">Demos</a></li>
+                <li><a runat="server" class="navlink-mobile" href="~/Mobile/Default#Contact">Contact Us</a></li>
+                <li><a runat="server" class="navlink-mobile" href="~/Mobile/Default#Home">Top of Page</a></li>
+            </ul>
+            <hr id="navbar-hr-mobile" />
+        </nav>
+        </header>
+
+        <div class="body-content-mobile">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+        </div>
+        <hr />
+        <footer>
+            <a runat="server" class="terms-mobile" 
+                href="~/Mobile/Terms">
+                Terms of Use</a> | <a runat="server" class="terms" 
+                href="~/Mobile/Privacy">
+                Privacy Policy</a>
+            <p>
+                &copy; 2014 Synvisus LLC<br /> 
+                P.O. Box 410474, St. Louis, MO 63141<br />
+                (314) 384-6204
+            </p>
+        </footer>
+    </div>
+    </form>
+</body>
+</html>

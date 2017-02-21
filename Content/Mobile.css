@@ -1,0 +1,112 @@
+﻿/* Default Values */
+body {
+    font-family: Calibri;
+    color: #361155;
+}
+
+/*Makes sure everything is contained within the margins*/
+.container-mobile {
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    width: 99%;
+}
+
+#header-mobile {
+    position: fixed;
+    top: 0;
+    width: 99%;
+}
+
+#navbar-mobile {
+    position: relative;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    width: 100%;
+}
+
+#navbar-list {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 8;
+}
+
+#navbar-list li {
+  font-size: 8px;
+  width: 20%;
+}
+
+/* unvisited link */
+a.navlink-mobile:link, 
+a.navlink-mobile:visited {
+    display: block;
+    width: 100%;
+    color: #361155;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a.navlink-mobile:hover, 
+a.navlink-mobile:active {
+    color: #EDEDED;
+    background-color: #361155;   
+}
+
+#navbar-hr-mobile {
+    position: absolute;
+    top: 15px;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+span.dummy-top-mobile {
+    margin-top: -120px;
+    padding-bottom: 120px;
+    display: block;
+}
+
+.body-content-mobile {
+    margin-top: 120px;
+    width: 100%;
+}
+
+.videos {
+    width: 100%;
+}
+
+.error-messages {
+    color: #ff0000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+a.terms-mobile:link,
+a.terms-mobile:visited,
+a.terms-mobile:hover,
+a.terms-mobile:active {
+    color: #361155;
+}
+
+.terms-text {
+    color: #000000;
+}
+
+a.blue-link:link,
+a.blue-link:hover,
+a.blue-link:visited {
+    color: #0026ff;
+}
+
+a.blue-link:active {
+    color: #ff0000;
+}

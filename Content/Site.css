@@ -1,0 +1,391 @@
+﻿/*Default values*/
+body {
+    font-family: Calibri;
+    color: #361155;
+}
+
+/*Makes sure everything is contained within the margins*/
+.container {
+    margin: 0 auto;
+    width: 950px;
+    min-width: 950px;
+    padding: 0 0 0 0;
+}
+
+/* Header */
+hr {
+    border-color: #361155;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    padding-top: 10px;
+    width: 950px;
+    background-color: #ffffff;
+    z-index: 5;
+}
+
+#navbar {
+    position: relative;
+    float: left;
+    margin-bottom: 5px;
+    margin-top: 20px;
+}
+
+#navbar-hr {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 950px;
+    z-index: 10;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 8;
+}
+
+li {
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+}
+
+/* unvisited link */
+a.navlink:link, 
+a.navlink:visited {
+    display: block;
+    width: 120px;
+    color: #361155;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+/* mouse over link */
+a.navlink:hover, 
+a.navlink:active {
+    color: #EDEDED;
+    background-color: #361155;
+}
+
+/* current page */
+.active {
+    font-weight: bold;
+}
+
+/*Default Page*/
+.body-content {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    margin-top: 145px; /*Navbar height = 126px*/
+    width: 100%;
+}
+
+.banner-field {
+    position: relative;
+    z-index: 0;
+}
+
+#banner {
+    width: 950px;
+    height: 432px;
+    max-width: 100%;
+    z-index: 0;
+}
+
+.circle-blocks-row {
+    width: 100%;
+    text-align: center;
+}
+
+.columns {
+    display: inline-block;
+}
+
+.circle-block {
+    position: relative;
+    display: block;
+    padding-top: 1px;
+    height: 200px;
+    width: 200px;
+    font-size: 28px;
+    text-align: center;
+    background-color: #361155;
+    color: #ffffff;
+    margin: 30px 58.3px;
+    border: 0;
+    border-radius: 50%;
+}
+
+#find-out {
+    float: left;
+    margin-top: 60px;
+    margin-left: 58.3px;
+    background-color: #D9D9D9;
+    -moz-box-shadow:    3px 3px 5px 1px #a3a3a3;
+    -webkit-box-shadow: 3px 3px 5px 1px #a3a3a3;
+    box-shadow:         3px 3px 5px 1px #a3a3a3;
+}
+
+.descript-p {
+    float: left;
+    width: 60.5%;
+    font-size: 19px;
+    z-index: 1;
+}
+
+a.link:link,
+a.link:visited {
+    color: #361155;
+}
+
+a.link:hover,
+a.link:active {
+    color: #a3a3a3;
+}
+
+a.circle-block:link,
+a.circle-block:visited {
+    background-color: #361155;
+    color: #ffffff;
+    text-decoration: none;
+    -moz-box-shadow:    3px 3px 5px 1px #a3a3a3;
+    -webkit-box-shadow: 3px 3px 5px 1px #a3a3a3;
+    box-shadow:         3px 3px 5px 1px #a3a3a3;
+}
+
+a.circle-block:hover {
+    background-color: #D9D9D9;
+    color: #361155;
+}
+
+a.circle-block:active {
+    -moz-box-shadow:    inset 3px 3px 5px #a3a3a3;
+    -webkit-box-shadow: inset 3px 3px 5px #a3a3a3;
+    box-shadow:         inset 3px 3px 5px #a3a3a3;
+}
+
+.circle-block-words {
+    margin-left: 0 auto;
+    margin-top: 35px;
+    text-align: center;
+}
+
+.circle-block-arrow {
+    font-size: 40px;
+    text-align: center;
+}
+
+.link-spanner {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+/*About Us Page*/
+.mission-paragraphs {
+    font-size: 18px;
+    margin-left: 3.2%;
+    margin-right: 3.2%;
+}
+
+.about-paragraphs {
+    font-size: 18px;
+}
+
+#mission {
+    position: relative;
+}
+
+.parag-logo {
+    position: absolute;
+    height: 21px;
+    margin-top: 15px;
+    padding-top: 3px;
+}
+
+.marker h3 {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /*margin-left: 77px;*/
+}
+
+#proposition-container {
+    position: relative;
+    height: 304px;
+}
+
+#about-left-p {
+    float: left;
+    height: 304px;
+    width: 35%;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 0;
+    text-align: left;
+    text-wrap: normal;
+    background-color: #EDEDED;
+}
+
+#chevron-left {
+    height: 0;
+    width: 0;
+    float:left;
+    border-top: 152px solid transparent;
+    border-left: 114px solid #EDEDED;
+    border-bottom: 152px solid transparent;
+    margin-right: 28.5px;
+}
+
+#circle {
+    height: 240px;
+    width: 240px;
+    position: absolute;
+    top: 37px;
+    left: 360px;
+    background-color: #361155;
+    color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    border: 0;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+    z-index: 3;
+}
+
+.circle-elements {
+    margin-top: 18px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 0;
+}
+
+#about-right-p {
+    float: left;
+    width: 35%;
+    height: 304px;
+    text-align: left;
+    background-color: #EDEDED;
+    padding-top: 5px;
+    padding-bottom: 10px;
+    padding-right: 30px;
+    padding-left: 0;
+}
+
+#chevron-right {
+    height: 0;
+    width: 0;
+    float: left;
+    border-top: 152px solid transparent;
+    border-right: 114px solid #EDEDED;
+    border-bottom: 152px solid transparent;
+    margin-left: 28.5px;
+}
+
+/*What We Do Page*/
+#what-img-top {
+    width: 27%;
+    height: 27%;
+    margin-top: 15px;
+    margin-bottom: 5px; 
+    margin-left: 6%;
+}
+
+#what-img-middle {
+    width: 38%;
+    height: 38%;
+    margin-top: 20px;
+    margin-right: 1%;
+}
+
+#what-img-bottom {
+    width: 24%;
+    height: 24%;
+    margin-top: 10px;
+    margin-left: 8.5%;
+}
+
+.what-edge-section {
+    position: relative;
+    width: 100%;
+    background-color: #EDEDED;
+    padding-top: 1px;
+    padding-bottom: 30px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.what-edge-paragraph {
+    width: 60%;
+    float: left;
+    padding-right: 4%;
+}
+
+.what-middle-section {
+    position: relative;
+    width: 100%;
+    padding-top: 1px;
+    padding-bottom: 30px;
+    padding-left: 4%;
+    padding-right: 4%;
+}
+
+.what-middle-paragraph {
+    width: 60%;
+    float: right;
+    padding-left: 4%;
+    /*overflow: auto;*/
+}
+
+span.dummy-top {
+    margin-top: -126px;  /*Navbar height = 126px*/
+    padding-bottom: 126px;
+    display: block;
+}
+
+/* Demos Page */
+video {
+    display: block;
+    margin: 0 auto;
+    width: 700px;
+}
+
+/* Contact Page */
+.error-messages {
+    color: #ff0000;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+a.terms:link,
+a.terms:visited,
+a.terms:hover,
+a.terms:active {
+    color: #361155;
+}
+
+a.blue-link:link,
+a.blue-link:hover,
+a.blue-link:visited {
+    color: #0026ff;
+}
+
+a.blue-link:active {
+    color: #ff0000;
+}
